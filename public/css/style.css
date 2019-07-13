@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  header {
+    padding: 30px;
+    text-align: center;
+    position:fixed;
+    float: left;
+    width: 1330px;
+    background-color:#1DA4AC; 
+  }
+  .judul{
+    float: left;
+    margin-left: 190px;
+    
+
+  }
+  .judul-1{
+    float: left;
+    margin-left: 70px;
+    margin-top: 20px;
+
+  }
+  .button-1{
+  background-color: greenyellow; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  }
+  .btn-size{
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .btn-2{
+    background-color: rgb(247, 195, 23); /* Green */
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+  .btn-clr-1{
+    background-color: rgb(23, 64, 247);
+  }
+  .btn-clr-2{
+    background-color: rgb(247, 23, 34);
+    color: black;
+  }
+    
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  .wrap {
+    width: 1330px; /*950px*/
+    margin:0px auto;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    float:left;
+    width:80%;
+    margin-left: 230px;
+    
+    background-color: #1DA4AC;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .blog {
+    width: 1099px;
+    float:right;
+    margin-left: 225px;
+    margin-top: 140px;
+    border:1px solid #dedede;
+  }
+  .conteudo {
+    width:1020px;
+    margin-left: 15px;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+    box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+  }
+
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Right column */
+  .leftcolumn {
+    float: left;
+    position: fixed;
+    margin-top: 130px;
+  }
+    .kanan {
+      margin-left: 290px;
+      margin-top: 130px;
+      margin-bottom: 10px;
+
+  }
+
+  .box-isi{
+    float: left;
+    width: 230px;
+    height: auto;
+    border: 1px solid;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+  }
+
+  .flex-box .box{
+  background-color: #f1f1f1;
+  width: 230px;
+  height: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  }
+
+  .box-1 {
+    flex-wrap: wrap;
+    font-size: 12px;
+    width: 100px;
+    height: 50px;
+  }
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+  	float:right;
+    text-align: center;
+    width:84%;
+    background: #ddd;
+    margin-top: 20px;
+  }
+
+  .navigation {
+  width: 220px;
+  height: 630px;
+  padding-right: 20px;
+  background-color:#1DA4AC; 
+}
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  right: 10%;
+  height:800px;
+  
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  right: 10%;
+  
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+  background-color: #1DA4AC;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    background-color: #C5C5C5;
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: #1DA4AC;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: #8FBC8F;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+  text-shadow: 1px 1px 0px #fff;
+  background: #eaebec;
+  border: #ccc 1px solid;
+  margin-top: 0px;
+  width:100%;
+
+}
+ 
+table th {
+  padding: 15px 35px;
+  border-left:1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  background: #ededed;
+}
+ 
+table th:first-child{  
+  border-left:none;  
+}
+ 
+table tr {
+  text-align: center;
+  padding-left: 20px;
+}
+ 
+table td:first-child {
+  text-align: left;
+  padding-left: 20px;
+  border-left: 0;
+}
+ 
+table td {
+  padding: 15px 35px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  background: #fafafa;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+  background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+ 
+table tr:last-child td {
+  border-bottom: 0;
+}
+ 
+table tr:last-child td:first-child {
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+ 
+table tr:last-child td:last-child {
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+ 
+table tr:hover td {
+  background: #f2f2f2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+  background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+}
+
+/* navbar tambahan */
+
+.bar {
+  margin:auto;
+  text-align: center;
+  width: 100%;
+  font-family: arial;
+} 
+
+.bar ul {
+  background:#37988e;
+  padding: 0 20px;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  width: 100%;
+}
+
+.bar ul li{
+  float:left;
+}
+
+.bar ul li:hover{
+  background:#d68d9a;
+}
+
+.bar ul li:hover a{
+  color:#000;
+}
+
+.bar ul li a{
+  display: block;
+  padding: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
